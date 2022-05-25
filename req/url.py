@@ -6,7 +6,7 @@ moni_headers = {
 url = 'http://www.baidu.com/'
 resp = urlopen(url)
 
-with open('req/bd.html', mode='w') as f:
+with open('req/bd.html', mode='w', encoding='utf-8') as f:
     f.write(resp.read().decode('utf-8'))
 
 print('好了')
